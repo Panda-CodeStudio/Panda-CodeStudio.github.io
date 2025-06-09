@@ -1,1 +1,10 @@
-# Hello!
+<html>
+  <body>
+    <script>
+      const fs = require('fs');
+      fs.writeFileSync('file.txt', 'data', 'utf-8');
+      const data = fs.readFileSync('file.txt', 'utf-8');
+      console.log(data);
+    </script>
+  </body>
+</html>
